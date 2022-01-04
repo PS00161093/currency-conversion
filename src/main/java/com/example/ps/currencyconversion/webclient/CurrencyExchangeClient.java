@@ -5,7 +5,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient(value = "currency-exchange", url = "localhost:8000")
+@FeignClient(value = "currency-exchange", url = "currency-exchange:8000")
 public interface CurrencyExchangeClient {
 
     @GetMapping("/currency-exchange/from/{from}/to/{to}")
